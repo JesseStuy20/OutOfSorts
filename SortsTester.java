@@ -9,5 +9,14 @@ public class SortsTester {
     }
     Sorts.bubbleSort(a) ;
     System.out.println(Arrays.toString(a)) ;
+    int seed = (rng.nextInt() % 1000000) ;
+    rng = new Random(seed) ;
+    int[] b = new int[7] ;
+    for(int i = 0; i < b.length; i++) {
+      b[i] = (rng.nextInt() % 100) ;
+    }
+    Sorts.bubbleSort(b) ;
+    System.out.println("Seed:" + seed) ;
+    System.out.println(Arrays.toString(b)) ;
   }
 }
