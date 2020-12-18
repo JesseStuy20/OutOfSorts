@@ -16,6 +16,7 @@ public class SortsTester {
       b[i] = (rng.nextInt() % 100) ;
     }
     int[] c = b ;
+    int[] d = b ;
     System.out.println("Seed:" + seed) ;
     System.out.println("bubbleSort") ;
     Sorts.bubbleSort(b) ;
@@ -23,5 +24,8 @@ public class SortsTester {
     System.out.println("selectionSort") ;
     Sorts.selectionSort(c) ;
     System.out.println(Arrays.toString(c)) ;
+    System.out.println("insertionSort") ;
+    Sorts.insertionSort(d) ;
+    System.out.println(Arrays.toString(d)) ;
   }
 }
