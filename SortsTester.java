@@ -15,8 +15,13 @@ public class SortsTester {
     for(int i = 0; i < b.length; i++) {
       b[i] = (rng.nextInt() % 100) ;
     }
+    int[] c = b ;
     System.out.println("Seed:" + seed) ;
+    System.out.println("bubbleSort") ;
     Sorts.bubbleSort(b) ;
     System.out.println(Arrays.toString(b)) ;
+    System.out.println("selectionSort") ;
+    Sorts.selectionSort(c) ;
+    System.out.println(Arrays.toString(c)) ;
   }
 }

@@ -15,6 +15,24 @@ public class Sorts{
       }
       if (inOrder == true) i = data.length-1 ;
     }
-    
   }
+
+  public static void selectionSort(int[] data) {
+    for (int i=0; i<data.length; i++) {
+      int temp = data[i] ;
+      int index = 0 ;
+      for (int j=i+1; j<data.length; j++) {
+        if (data[j] < temp) {
+          temp = data[j] ;
+          index = j ;
+        }
+      }
+      if (temp < data[i]) {
+        data[index] = data[i] ;
+        data[i] = temp ;
+      }
+    }
+  }
+
+
 }
