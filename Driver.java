@@ -17,8 +17,13 @@ public class Driver{
         for(int i = 0; i < randData.length; i++) {
           randData[i] = (rng.nextInt() % 100) ;
         }
+        System.out.println(Arrays.toString(randData)) ;
       }else if(args[2].equals("equal")){
-	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
+        int temp = (rng.nextInt() % 100) ;
+        for(int i = 0; i < randData.length; i++) {
+          randData[i] = temp ;
+        }
+        System.out.println(Arrays.toString(randData)) ;
       }else if(args[2].equals("sorted")){
 	      System.out.println("REPLACE THIS LINE WITH ARRAY VALUE GENERATION!");
       }else if(args[2].equals("reversed")){
